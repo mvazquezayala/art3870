@@ -1,0 +1,36 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foundation for Sites</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+  </head>
+  <body>
+
+  <h1>Miguel Vazquez Ayala</h1>
+
+<p><img class="img-circle" src="images/miguel.jpg"></p>
+
+<h2><script>
+datetoday = new Date();
+timenow=datetoday.getTime();
+datetoday.setTime(timenow);
+thehour = datetoday.getHours();
+if (thehour > 18) display = "Evening";
+else if (thehour >12) display = "Afternoon";
+else display = "Morning";
+var greeting = ("Good " + display + "!");
+document.write(greeting);
+</script></h2>
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
